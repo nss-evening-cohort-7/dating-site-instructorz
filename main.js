@@ -133,3 +133,20 @@ var employees = [
     favoriteDinos: [4, 8]
   }
 ];
+
+function dinoStringBuilder(dinoArray){
+  dinoArray.forEach(function(dino){
+    var strang = "";
+    strang += "<div class='dino'>";
+    strang += "<h1>" + dino.name + "</h1>";
+    strang += "</div>";
+    printToDom(strang, 'dino-holder')
+  })
+}
+
+function printToDom(domString, divId){
+  var element = document.getElementById(divId);
+  element.innerHTML += domString;
+}
+
+dinoStringBuilder(dinos);
