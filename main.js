@@ -133,3 +133,8 @@ var employees = [
     favoriteDinos: [4, 8]
   }
 ];
+
+
+
+
+console.log("dinos", dinos);
