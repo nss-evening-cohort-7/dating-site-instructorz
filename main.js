@@ -137,4 +137,14 @@ var employees = [
 
 
 
-console.log("dinos", dinos);
+// function dinoStringBuilder(dino){
+
+// }
+
+
+function printToDom(domString, divId){
+  var element = document.getElementById(divId);
+  element.innerHTML += domString;
+}
+
+printToDom("alksdflaksdjflaksdflaksdf", 'dino-holder')
